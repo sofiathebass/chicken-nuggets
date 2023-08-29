@@ -73,7 +73,7 @@ h2 {
   margin: 2%;
   padding-right: 0%;
   margin-right:0.5%;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .Current-Projects {
@@ -84,7 +84,7 @@ h2 {
   min-height: 35vh;
   margin: 2%;
   margin-left:0.5%;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .Overlay-Wrapper {
@@ -105,8 +105,8 @@ h2 {
 }
 
 .Space {
-  height:5px;
-  background-color:white;
+  height:50px;
+  background-color:#f5fefd;
 }
 
 .Current-Work, .Header-Pic, .cursive, .Lab-Info {
@@ -155,7 +155,7 @@ h2 {
 }
 
 .Pictures {
-  height:80vh;
+  height:85vh;
 } 
 
 .Resumes {
@@ -178,6 +178,16 @@ h2 {
 
 .Past-Projects {
   border: 2px solid #205c37;
+  grid-area: 1 / 1;
+}
+
+.Branches {
+  grid-area: 1 / 1;
+  display: flex;
+}
+
+.TheSquareHole {
+  grid-area: 1 / 1;
 }
 
 .Whitespace {
@@ -220,10 +230,52 @@ h2 {
   margin-right: 3%;
 }
 
+.LeftBranch {
+  flex: 1;
+  text-align: left;
+  margin-left: 0%;
+  margin-top:1%;
+}
+
+@media only screen and (min-width: 600px) {
+  .LeftBranchImg {
+    width:470px;
+  }
+
+  .RightBranchImg {
+    width:600px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .LeftBranchImg {
+    width:125%;
+  }
+
+  .RightBranchImg {
+    width:125%;
+  }
+
+  .LeftBranch {
+    margin-top:10%;
+  }
+
+  .RightBranch {
+    margin-top:10%;
+    padding-right:10%;
+  }
+}
+
+.RightBranch {
+  flex: 1;
+  text-align: right;
+  margin-right:-5px;
+}
+
 .ProjectLeft1 {
   flex: 1;
   margin-left: 1%;
-  margin-top: 1%;
+  margin-top: 5%;
   vertical-align: middle;
 }
 
@@ -246,6 +298,7 @@ h2 {
   flex: 1;
   text-align: right;
   margin-right: 3%;
+  margin-top: 5%;
   vertical-align: text-top;
 }
 
@@ -260,9 +313,35 @@ h2 {
 }
 
 .square {
-  width:100px;
-  height:100px;
-  margin:3%;
+  width:130px;
+  height:130px;
+  margin:12px;
+  border-radius:5px;
+}
+
+.randomness {
+  transition-duration: 0.4s;
+  border: 2px solid #205c37; /* Green */
+  border-radius: 5px;
+  width:125px;
+  height:50px;
+  font-size:medium;
+}
+
+.randomness:hover {
+  background-color: #205c37; /* Green */
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.SquareBox {
+  margin-left:2%;
+  margin-right:2%;
+}
+
+.Pigeon {
+  text-align:left;
+  /*margin-left:-360px;*/
 }
 
 .Particles {

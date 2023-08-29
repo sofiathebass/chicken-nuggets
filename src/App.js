@@ -11,11 +11,19 @@ import flowers55 from './images/Flower55.png';
 import flowers555 from './images/Flower555.png';
 import labscripts from './images/LabScripts.png';
 import tmsca from './images/woof.png';
+import rightBranch from './images/rightBranch.png';
+import leftBranch from './images/leftBranch.png';
 import trevor from './images/trevor1.png';
 import surmice from './images/surmice.png';
 import hockemeyer from './images/hockemeyer.png';
 import conboy from './images/conboy.png';
 import berkscc from './images/berkscc.png';
+import b1337 from './images/pastprojects/b1337.png';
+import dss from './images/pastprojects/dss.png';
+import mlh from './images/pastprojects/mlh.png';
+import nutri from './images/pastprojects/nutri.png';
+import ostem from './images/pastprojects/ostem.png';
+import musa from './images/pastprojects/musa.png';
 import './App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -35,6 +43,7 @@ import qworld from './images/pastprojects/qworld.png'
 import ulab from './images/pastprojects/ulab.png'
 import bab from './images/pastprojects/bab.png'
 import csm from './images/pastprojects/csm.png'
+import pigeon from './videos/pigeon.mp4'
 import Particles from "react-tsparticles";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
@@ -75,7 +84,13 @@ function App() {
     qworld,
     ulab,
     bab,
-    csm
+    csm,
+    b1337,
+    dss,
+    mlh,
+    nutri,
+    ostem,
+    musa
   ];
 
   const [squares, setSquares] = useState(values);
@@ -252,19 +267,16 @@ function App() {
               <div className="Left">
                 <img className="Upside" src={upsidelogo} alt="Upside Foods Logo" width="50%" style={{paddingRight:'4%'}}/>
                 <p style={{textAlign:'left', margin:'3%'}}> 
-                  switch to lab in fall. Currently interning at Upside Foods, the first USDA approved cultivated meats company. 
-                  My internship is cell culture and automation based, and thus far I've worked on variability, optimization, and scripting for the high throughput Tecans. 
-                  Upside foods is a company that does company things, with company values and amazingly, even a product. 
-                  I can't find a blurb on the company, but I assume one would talk about how the company has personnel that more or less does work, occasionally even different kinds of work.
-                  Sometimes, the company does well in the market, and highlighting this helps put the company's best foot forward. Come give our company, money. 
-                  I still have more space to fill, should I add something in the interim? A picture maybe? Any more riveting information?
-                  I can even split up the websites into two rows, that would fill the rest of the space in the column and have the two sides match.
-                  I can also switch the name of this box to like skills and have it be on my skillset in general instead of this giant wall of text just about this singular summer
-                  internship slash the company as a whole, which is a cool company but not really why someone would come onto my website. I can also add cute little drawings to the whitespace?
+                  This summer I interned at Upside Foods as a Molecular Screening Intern. Upside Foods is the first FDA and USDA approved cultivated meat company, 
+                  and I was assigned to helping optimize the cell lines currently being developed as part of the R&D process. This meant that I mainly worked with cell culture 
+                  and automation, working on optimizing automative efficiency and capacity. Within automation, I worked on a variety of liquid handlers, scripting in C#, JavaScript, and 
+                  React. In order to facilitate and test the updated processes, this meant passaging suspension and adhesion cells, and imaging for several different flourescent markers at once. Lastly,
+                  I brought it together with datascience, learning R and improving my visualizations to both scientific and nonscientific audiences of varying project related knowledge. <b style={{color: "#900603"}}> Overall, I learned 
+                  a lot of relevant information supporting an environmentally sustainable and animal conscious organization in the process of shifting the paradigm on how we view our food! </b>
                 </p>
               </div>
             </div>
-            <h1 style={{marginBottom:0, marginTop:"5%"}}>Webmaster</h1>
+            <h1 style={{marginBottom:0, marginTop:"1%"}}>Webmaster</h1>
             <p style={{marginTop:0, marginBottom:"5%", fontSize:"11px"}}>I run all these websites, go check them out!</p>
             <div className = "Columns">
               <div className="Left">
@@ -289,7 +301,7 @@ function App() {
           </div>
           <div className="Current-Projects">
             <h1>Current Projects</h1>
-            <div className="Project" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="-200">
+            <div className="Project" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="-100">
               <div className="ProjectLeft1">
                 <a href={"https://sofiathebass.github.io/SmallScripts/"} target="_blank" rel="noopener noreferrer">
                   <img className="Icon" src={labscripts} alt="Lab Scripts" width="85%"/>
@@ -314,7 +326,7 @@ function App() {
                 <a href={"https://tmsca.berkeley.edu/index.html"} target="_blank" rel="noopener noreferrer">
                   <img className="Icon" src={tmsca} alt="TMSCA" width="85%"/>
                 </a>
-                <p className="SmallFont">Website credit Richard Ruan, I updated it F22</p>
+                <p className="SmallFont">Website credit Richard Ruan, I'm the current webmaster</p>
               </div>
             </div>
             <div className="Project" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="-200">
@@ -355,12 +367,13 @@ function App() {
           <img src={flowers555} alt="Cottagecore" className="Test-Overlay2"/>
         </div>
       </div>
-      <div className="Pictures">
+      <div className="Pictures" style={{marginLeft:"5%"}}>
         <h1>Pictures!</h1>
         <div>
           <SimpleImageSlider
-            width={'100%'}
-            height={'60%'}
+            width={'90%'}
+            height={'70%'}
+            textAlign={'center'}
             images={images}
             showBullets={true}
             showNavs={true}
@@ -368,41 +381,70 @@ function App() {
         </div>
       </div>
       <div className="Past-Projects">
-        <h1>Past Projects</h1>
-        <br></br>
-        <button className="randomness" onClick={() => handle_random()}>Scramble!</button>
-        <br></br>
-        <br></br>
-        <Square value={squares[0]} />
-        <Square value={squares[1]} />
-        <Square value={squares[2]} />
-        <Square value={squares[3]} />
-        <Square value={squares[4]} />
-        <Square value={squares[5]} />
-        <Square value={squares[6]} />
-        <Square value={squares[7]} />
-        <Square value={squares[8]} />
-        <Square value={squares[9]} />
-        <div className="Overlay-Wrapper" style={{paddingTop:"10%"}}>
+        <div className="Overlay-Wrapper">
+          <div className="Branches">
+            <div className="LeftBranch">
+              <img className="LeftBranchImg" src={leftBranch} alt="Left Branch"/>
+            </div>
+            <div className="RightBranch">
+              <img className="RightBranchImg" src={rightBranch} alt="Right Branch"/>
+            </div>
+          </div>
+          <div className="TheSquareHole">
+            <h1>Past Projects</h1>
+            <br></br>
+            <br></br>
+            <br></br>
+            <div className="SquareBox">
+            <Square value={squares[0]} />
+            <Square value={squares[1]} />
+            <Square value={squares[2]} />
+            <Square value={squares[3]} />
+            <Square value={squares[4]} />
+            <Square value={squares[5]} />
+            <Square value={squares[6]} />
+            <Square value={squares[7]} />
+            <Square value={squares[8]} />
+            <Square value={squares[9]} />
+            <Square value={squares[10]} />
+            <Square value={squares[11]} />
+            <Square value={squares[12]} />
+            <Square value={squares[13]} />
+            <Square value={squares[14]} />
+            <Square value={squares[15]} />
+            </div>
+            <br></br>
+            <br></br>
+            <br></br>
+            <button className="randomness" onClick={() => handle_random()}>Scramble!</button>
+            <br></br>
+          </div>
+        </div>
+        <div className="Overlay-Wrapper" style={{paddingTop:"0%", marginTop:"-10%"}}>
             <div className="cursive" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-300">
               <h2>labs</h2>
             </div>
             <div className="Lab-Info" data-aos="fade-in" data-aos-duration="1000" data-aos-offset="200">
-              <div className="Congirl" style={{marginTop:"3%", display:"flex"}}>
+              <div className="Congirl" style={{marginTop:"3%", display:"flex", borderRadius:"50px", width:'70%'}}>
                 <div className="ProjectLeft1">
                   <a href={"https://conboylab.berkeley.edu/"} target="_blank" rel="noopener noreferrer">
                     <img className="Icon" src={conboy} alt="Conboy Lab" width="80%"/>
                   </a>
                 </div>
                 <div className="ProjectRight1">
-                  <p>Conboy lab!</p>
+                  <p style={{fontSize:'18px'}}>Currently, I'm at the Conboy Lab, which studies aging and heterochronic parabiosis. Heterochronic parabiosis is blood exchange from young to old animals,
+                    theoretically for the process of extending youth in aged bodies. The lab is studying what causes aging in the blood, and what could be taken out or added in to help extend life. Currently, 
+                    I'm working on the blood brain barrier, what in old blood causes cells to senence, die, or age, and what in young blood helps rejuvenate brain cells?
+                  </p>
                 </div>
               </div>
               <div className="Space"></div>
-              <div className="Barton" style={{display:"flex"}}>
+              <div className="Barton" style={{display:"flex", borderRadius:"50px", width:"70%", marginLeft:"28%"}}>
                 <div className="ProjectLeft2">
-                  <p>
-                    Barton Lab
+                  <p style={{fontSize:'18px'}}>
+                    I was at the Barton Lab from F21-S22, where I worked on gut microbiota interactions. This involved working with germ free and high barrier mice, in order to minimize or completely eliminate 
+                    outside microbiota influence from handlers or the environment around the mice. It also meant that I worked with the anaerobic chamber to culture bacteria, as well as doing mini/midipreps to add plasmids to these bacteria. 
+                    I also had exposure to tumor injections, sapphic/cardiac bleeds, and mouse weaning/euthanasia work through this experience!
                   </p>
                 </div>
                 <div className="ProjectRight2">
@@ -414,6 +456,14 @@ function App() {
             </div>
         </div>
         <h3>Animals/Volunteering, etc.</h3>
+        <div className="Pigeon" data-aos="fade-right" data-aos-duration="3000">
+          <video height="600px" controls autoplay loop muted playsinline>
+          <source src={pigeon} type="video/mp4"/>
+          </video>
+          <script>
+          document.getElementById('vid').play();
+          </script>
+        </div>
       </div>
     </div>
   );
