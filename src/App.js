@@ -10,6 +10,7 @@ import flowers5 from './images/Flower.png';
 import flowers55 from './images/Flower55.png';
 import flowers555 from './images/Flower555.png';
 import labscripts from './images/LabScripts.png';
+import flowerborder from './images/flowerborder.png';
 import tmsca from './images/woof.png';
 import rightBranch from './images/rightBranch.png';
 import leftBranch from './images/leftBranch.png';
@@ -368,7 +369,10 @@ function App() {
         </div>
       </div>
       <div className="Pictures" style={{marginLeft:"5%"}}>
-        <h1>Pictures!</h1>
+        <br></br>
+        <br></br>
+        <h3 data-aos="fade-in" data-aos-duration="1000" data-aos-offset="200">Pictures!</h3>
+        <br></br>
         <div>
           <SimpleImageSlider
             width={'90%'}
@@ -384,14 +388,17 @@ function App() {
         <div className="Overlay-Wrapper">
           <div className="Branches">
             <div className="LeftBranch">
-              <img className="LeftBranchImg" src={leftBranch} alt="Left Branch"/>
+              <img className="LeftBranchImg" src={leftBranch} alt="Left Branch" data-aos="fade-up-right" data-aos-duration="1000" data-aos-offset="200"/>
             </div>
             <div className="RightBranch">
-              <img className="RightBranchImg" src={rightBranch} alt="Right Branch"/>
+              <img className="RightBranchImg" src={rightBranch} alt="Right Branch" data-aos="fade-up-left" data-aos-duration="1000" data-aos-offset="200"/>
             </div>
           </div>
           <div className="TheSquareHole">
-            <h1>Past Projects</h1>
+            <br></br>
+            <br></br>
+            <br></br>
+            <h3 data-aos="fade-in" data-aos-duration="1000" data-aos-offset="0">Past Projects</h3>
             <br></br>
             <br></br>
             <br></br>
@@ -421,7 +428,7 @@ function App() {
           </div>
         </div>
         <div className="Overlay-Wrapper" style={{paddingTop:"0%", marginTop:"-10%"}}>
-            <div className="cursive" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-300">
+            <div className="cursive" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-100">
               <h2>labs</h2>
             </div>
             <div className="cursive" data-aos="fade-in" data-aos-duration="1000" data-aos-offset="200" style={{height:'600px', width:'100%', backgroundColor:'#f5fefd'}}>
@@ -456,8 +463,19 @@ function App() {
                 </div>
               </div>
             </div>
+            <div className="cursive" style={{textAlign:"left", marginLeft:"-4%", marginTop:"-2.5%"}} data-aos="fade-in" data-aos-duration="1000" data-aos-offset="200">
+              <img src={flowerborder} alt="Cottagecore" width="15%"/>
+            </div>
+            <div className="cursive" style={{textAlign:"right", display:"flex", alignItems:"self-end", marginLeft:"24%", marginBottom:"19%"}} data-aos="fade-in" data-aos-duration="1000" data-aos-offset="200">
+              <img src={flowerborder} alt="Cottagecore" width="15%"/>
+            </div>
         </div>
+        <br></br>
+        <br></br>
+        <br></br>
         <h3>Animals/Volunteering, etc.</h3>
+        <br></br>
+        <br></br>
         <div className="Pigeon" data-aos="fade-right" data-aos-duration="3000">
           <video height="600px" controls autoplay loop muted playsinline>
           <source src={pigeon} type="video/mp4"/>

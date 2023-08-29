@@ -53,6 +53,14 @@ h2 {
   margin-bottom:0%;
 }
 
+h3 {
+  font-size:40px;
+  font-family:Snell Roundhand, cursive;
+  margin-top:0%;
+  margin-bottom:0%;
+  color: #205c37;
+}
+
 .SmallFont {
   font-size:6px;
   text-align:center;
@@ -155,7 +163,7 @@ h2 {
 }
 
 .Pictures {
-  height:85vh;
+  height:90vh;
 } 
 
 .Resumes {
@@ -168,7 +176,7 @@ h2 {
 
 .Res, .Icon {
   margin: 0.5%;
-  padding-right:5%;
+  margin-right:5%;
 }
 
 .Left-align {
@@ -332,6 +340,11 @@ h2 {
   background-color: #205c37; /* Green */
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.Icon:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  border-radius: 50%;
 }
 
 .SquareBox {
