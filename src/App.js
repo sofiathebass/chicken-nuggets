@@ -45,6 +45,7 @@ import ulab from './images/pastprojects/ulab.png'
 import bab from './images/pastprojects/bab.png'
 import csm from './images/pastprojects/csm.png'
 import pigeon from './videos/pigeon.mp4'
+import pigeongif from './videos/pigeon.gif'
 import Particles from "react-tsparticles";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
@@ -264,7 +265,8 @@ function App() {
         <div className="Current-Work">
           <div className="Employment">
             <h1>Employment</h1>
-            <div className = "Columns">
+            <p style={{fontSize:'2px', color:"#735477"}}>d</p>
+            <div className = "Columns" style={{backgroundColor:"white", borderRadius:"25px", paddingTop:"40px", paddingBottom:"20px", border: "5px solid #e9c9ed"}}>
               <div className="Left">
                 <img className="Upside" src={upsidelogo} alt="Upside Foods Logo" width="50%" style={{paddingRight:'4%'}}/>
                 <p style={{textAlign:'left', margin:'3%'}}> 
@@ -277,31 +279,34 @@ function App() {
                 </p>
               </div>
             </div>
-            <h1 style={{marginBottom:0, marginTop:"1%"}}>Webmaster</h1>
-            <p style={{marginTop:0, marginBottom:"5%", fontSize:"11px"}}>I run all these websites, go check them out!</p>
-            <div className = "Columns">
-              <div className="Left">
-                Stem Cell Center<br></br>
-                <a href={"https://stemcellcenter.berkeley.edu"} target="_blank" rel="noopener noreferrer">
-                  <img src={berkscc} alt="Berkeley Stem Cell Center" width="99.5%" style={{marginTop:"2%"}}/>
-                </a>
-              </div>
-              <div className="Center" style={{marginLeft:"4%"}}>
-                Hockemeyer Lab <br></br>
-                <a href={"https://hockemeyerlab.berkeley.edu"} target="_blank" rel="noopener noreferrer">
-                  <img src={hockemeyer} alt="Hockemeyer Lab" width="90%" style={{marginTop:"2%"}}/>
-                </a>
-              </div>
-              <div className="Right" style={{textAlign:"center"}}>
-                Conboy Lab <br></br> 
-                <a href={"https://conboylab.berkeley.edu"} target="_blank" rel="noopener noreferrer">
-                  <img src={conboy} alt="Conboy Lab" width="88%" style={{marginTop:"2%"}}/>
-                </a>
+            <div style={{marginTop:"5%"}}>
+              <div className="Webmaster" style={{backgroundColor:"white", paddingBottom:"30px", paddingTop:"10px", borderRadius:"25px", border: "5px solid #e9c9ed"}}>
+                <p style={{marginTop:"3%", marginBottom:"2%", fontSize:"24px", color:"#735477", fontFamily:"URW Chancery L, cursive"}}> <b>I run all these websites, go check them out!</b></p>
+                <div className = "Columns">
+                  <div className="Left">
+                    Stem Cell Center<br></br>
+                    <a className="hover" href={"https://stemcellcenter.berkeley.edu"} target="_blank" rel="noopener noreferrer">
+                      <img src={berkscc} alt="Berkeley Stem Cell Center" width="99.5%" style={{marginTop:"2%"}}/>
+                    </a>
+                  </div>
+                  <div className="Center" style={{marginLeft:"4%"}}>
+                    Hockemeyer Lab <br></br>
+                    <a className="hover" href={"https://hockemeyerlab.berkeley.edu"} target="_blank" rel="noopener noreferrer">
+                      <img src={hockemeyer} alt="Hockemeyer Lab" width="90%" style={{marginTop:"2%"}}/>
+                    </a>
+                  </div>
+                  <div className="Right" style={{textAlign:"center"}}>
+                    Conboy Lab <br></br> 
+                    <a className="hover" href={"https://conboylab.berkeley.edu"} target="_blank" rel="noopener noreferrer">
+                      <img src={conboy} alt="Conboy Lab" width="88%" style={{marginTop:"2%"}}/>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div className="Current-Projects">
-            <h1>Current Projects</h1>
+            <h1 style={{marginTop:'0%'}}>Current Projects</h1>
             <div className="Project" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="-100">
               <div className="ProjectLeft1">
                 <a href={"https://sofiathebass.github.io/SmallScripts/"} target="_blank" rel="noopener noreferrer">
@@ -310,17 +315,17 @@ function App() {
                 <p className="SmallFont">I coded this website because I'm cool and stuff</p>
               </div>
               <div className="ProjectRight1">
-                <p>The other website I'm currently working on is dedicated to short scripts for help with lab calculations or coursework. 
-                  This scripting website has Python integrated into Java using pyscript, which allows me and my peers to write code in python, integrate it into the website as a small icon, and then cleanly output results. 
-                  Front end is in html/css, and I will be adding a php backend.</p>
+                <p style={{fontSize:"18px"}}>This website is dedicated to short scripts for help with lab calculations or coursework. 
+                  This scripting website has Python integrated into Java using Pyscript, which allows me and my peers to write code in python, integrate it into the website as a small icon, and then cleanly output results. 
+                </p>
               </div>
             </div>
             <div className="Project" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-200">
               <div className="ProjectLeft2">
-                <p>
-                  I am a current (F22-present) copresident of the TMSCA, organizing the first Translational Medicine and Stem Cell conference at UC Berkeley since 2018 and raising 6k of funding, triple any previous conference. 
-                  This conference brought in speakers from around the Bay Area, including UCB, UCSF, Stanford, and CIRM, with sponsors coming from around the country.
-                  Along with the conference, I facilitated partnerships with other student orgs, university spaces, and external corporations, with the end goal of educating UC Berkeley and the surrounding Bay Area high schools about stem cells and translational medicine.
+                <p style={{fontSize:"18px"}}>
+                  Current copresident of the TMSCA, organizing the first TMSCA conference at UC Berkeley since 2018 and raising 6k of funding, triple any previous conference, and 
+                  bringing in speakers from around the Bay Area, including UCB, UCSF, Stanford, and CIRM.
+                  As well, I facilitated partnerships with other student orgs, university spaces, and external corporations, with the end goal of educating UC Berkeley and the surrounding Bay Area high schools about stem cells and translational medicine.
                 </p>
               </div>
               <div className="ProjectRight2">
@@ -333,27 +338,25 @@ function App() {
             <div className="Project" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="-200">
               <div className="ProjectLeft1">
                 <a href={"https://sofiathebass.github.io/SurMice/index.html"} target="_blank" rel="noopener noreferrer">
-                  <img className="Icon" src={surmice} alt="SurMice" width="65%"/>
+                  <img className="Icon" src={surmice} alt="SurMice" width="65%" style={{marginTop:"-6%"}}/>
                 </a>
                 <p className="SmallFont">Website coded by Myself, Conner Mi, Giselle Fuchs</p>
               </div>
-              <div className="ProjectRight1">
-                <p>Big Ideas competition finalist and CEO of SurMice, a startup focused on murdering less mice.
+              <div className="ProjectRight1" style={{marginTop:"-1%"}}>
+                <p style={{fontSize:"18px"}}>Big Ideas competition finalist and CEO of SurMice, a startup focused on murdering less mice.
                   SurMice aims to facilitate closer collaboration between universities and zoos by using surplus lab mice as “feeder mice” for zoos in order to cut costs, resource waste, and energy usage for both parties.
-                  We envision a platform that can standardize this practice across multiple universities, rather than isolated instances of partnerships. 
-                  Our goal is the help educational institutions and wildlife centers undercut the abusive practices of the billion dollar feeder mouse industry, while curtailing lab related biological waste.
                 </p>
               </div>
             </div>
-            <div className="Project" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="-200">
+            <div className="Project" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="-200" style={{marginBottom:"2%"}}>
               <div className="ProjectLeft2">
-                <p>Current Crisis Counselor for the Trevor Project, supporting contacts around the US as they navigate through difficult situations.</p>
+                <p style={{fontSize:"18px"}}>Current Crisis Counselor for the Trevor Project, supporting contacts around the US as they navigate through difficult situations.</p>
               </div>
-              <div className="ProjectRight2">
+              <div className="ProjectRight2" style={{marginTop:"2%"}}>
                 <a href={"https://www.thetrevorproject.org"} target="_blank" rel="noopener noreferrer">
                   <img className="Icon" src={trevor} alt="Trevor" width="65%"/>
                 </a>
-                <p className="SmallFont">I did not code this website (shocker ik), but definitely take a look and support them!</p>
+                <p className="SmallFont">I didn't code this website, but definitely <br></br> take a look and support them!</p>
               </div>
             </div>
           </div>
@@ -428,15 +431,15 @@ function App() {
           </div>
         </div>
         <div className="Overlay-Wrapper" style={{paddingTop:"0%", marginTop:"-10%"}}>
-            <div className="cursive" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-100">
+            <div className="cursive" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
               <h2>labs</h2>
             </div>
-            <div className="cursive" data-aos="fade-in" data-aos-duration="1000" data-aos-offset="200" style={{height:'600px', width:'100%', backgroundColor:'#f5fefd'}}>
+            <div className="cursive" data-aos="fade-in" data-aos-duration="1000" data-aos-offset="200" style={{height:'600px', width:'90%', backgroundColor:'#f5fefd', borderRadius:'10px'}}>
             </div>
             <div className="Lab-Info" data-aos="fade-in" data-aos-duration="1000" data-aos-offset="200">
               <div className="Congirl" style={{marginTop:"3%", display:"flex", borderRadius:"50px", width:'70%'}}>
                 <div className="ProjectLeft1">
-                  <a href={"https://conboylab.berkeley.edu/"} target="_blank" rel="noopener noreferrer">
+                  <a href={"https://conboylab.berkeley.edu/"} target="_blank" rel="noopener noreferrer" style={{backgroundColor:'white'}}>
                     <img className="Icon" src={conboy} alt="Conboy Lab" width="80%"/>
                   </a>
                 </div>
@@ -477,6 +480,10 @@ function App() {
         <br></br>
         <br></br>
         <div className="Pigeon" data-aos="fade-right" data-aos-duration="3000">
+          <img src={pigeongif} alt="Pigeon" width="50%"/>
+        </div>
+        {/*
+        <div className="Pigeon" data-aos="fade-right" data-aos-duration="3000">
           <video height="600px" controls autoplay loop muted playsinline>
           <source src={pigeon} type="video/mp4"/>
           </video>
@@ -484,6 +491,7 @@ function App() {
           document.getElementById('vid').play();
           </script>
         </div>
+          */}
       </div>
     </div>
   );

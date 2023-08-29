@@ -41,7 +41,7 @@
 h1 {
   font-family:URW Chancery L, cursive;
   font-style: italic;
-  color: #205c37;
+  color: #e9c9ed;
 }
 
 h2 {
@@ -74,21 +74,22 @@ h3 {
 
 .Employment {
   flex: 1;
-  background-color: #f5fefd;
-  border: 2px solid #205c37;
+  background-color: #735477;
+  /*border: 2px solid #205c37;*/
   border-radius: 25px;
   min-height: 10vh;
   margin: 2%;
   padding-right: 0%;
   margin-right:0.5%;
+  margin-top:0%;
   font-size: 16px;
 }
 
 .Current-Projects {
   flex: 1;
-  border: 2px solid #205c37;
+  /*border: 2px solid #205c37;*/
   border-radius: 25px;
-  background-color: #f5fefd;
+  /*background-color: #f5fefd;*/
   min-height: 35vh;
   margin: 2%;
   margin-left:0.5%;
@@ -225,6 +226,10 @@ h3 {
   border-radius: 25px;
   align-items:center;
   vertical-align:middle;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom:2%;
+  margin-top:0;
 }
 
 .Left {
@@ -344,7 +349,12 @@ h3 {
 
 .Icon:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  border-radius: 50%;
+  /*border-radius: 50%;*/
+  border-radius: 10%;
+}
+
+.hover:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .SquareBox {
