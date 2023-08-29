@@ -142,7 +142,7 @@ function App() {
         </div>
       </header>
       <div className="NameOverlay" >
-      <h1 className="Name">Sofia</h1>
+      <h1 className="Name">Sofia Theodoras</h1>
       <div className="Particles">
         <Particles
               id="tsparticles"
@@ -170,7 +170,7 @@ function App() {
                       distance: 40,
                       duration: 2,
                       opacity: 8,
-                      size: 12,
+                      size: 14,
                       speed: 3
                     }
                   }
@@ -186,7 +186,7 @@ function App() {
                     distance: 30,
                     enable: true,
                     opacity: 0.3,
-                    width: 0.5
+                    width: 0.7
                   },
                   move: {
                     attract: {
@@ -210,7 +210,7 @@ function App() {
                       area: 2000
                     },
                     limit: 0,
-                    value: 200
+                    value: 400
                   },
                   opacity: {
                     animation: {
