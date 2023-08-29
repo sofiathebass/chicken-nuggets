@@ -424,6 +424,8 @@ function App() {
             <div className="cursive" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-300">
               <h2>labs</h2>
             </div>
+            <div className="cursive" data-aos="fade-in" data-aos-duration="1000" data-aos-offset="200" style={{height:'600px', width:'100%', backgroundColor:'#f5fefd'}}>
+            </div>
             <div className="Lab-Info" data-aos="fade-in" data-aos-duration="1000" data-aos-offset="200">
               <div className="Congirl" style={{marginTop:"3%", display:"flex", borderRadius:"50px", width:'70%'}}>
                 <div className="ProjectLeft1">
