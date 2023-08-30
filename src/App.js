@@ -313,15 +313,15 @@ function App() {
                 </a>
                 <p className="SmallFont">I coded this website because I'm cool and stuff</p>
               </div>
-              <div className="ProjectRight1">
-                <p style={{fontSize:"18px"}}>This website is dedicated to short scripts for help with lab calculations or coursework. 
+              <div className="ProjectRight1" style={{marginRight:'17%', textAlign:'left'}}>
+                <p style={{fontSize:"16px"}}>This website is dedicated to short scripts for help with lab calculations or coursework. 
                   This scripting website has Python integrated into Java using Pyscript, which allows me and my peers to write code in python, integrate it into the website as a small icon, and then cleanly output results. 
                 </p>
               </div>
             </div>
             <div className="Project" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-200">
-              <div className="ProjectLeft2">
-                <p style={{fontSize:"18px"}}>
+              <div className="ProjectLeft2" style={{marginLeft:'6%'}}>
+                <p style={{fontSize:"16px"}}>
                   Current copresident of the TMSCA, organizing the first TMSCA conference at UC Berkeley since 2018 and raising 6k of funding, triple any previous conference, and 
                   bringing in speakers from around the Bay Area, including UCB, UCSF, Stanford, and CIRM.
                   As well, I facilitated partnerships with other student orgs, university spaces, and external corporations, with the end goal of educating UC Berkeley and the surrounding Bay Area high schools about stem cells and translational medicine.
@@ -341,15 +341,15 @@ function App() {
                 </a>
                 <p className="SmallFont">Website coded by Myself, Conner Mi, Giselle Fuchs</p>
               </div>
-              <div className="ProjectRight1" style={{marginTop:"-1%"}}>
-                <p style={{fontSize:"18px"}}>Big Ideas competition finalist and CEO of SurMice, a startup focused on murdering less mice.
+              <div className="ProjectRight1" style={{marginTop:"-1%", marginRight:'6%'}}>
+                <p style={{fontSize:"16px"}}>Big Ideas competition finalist and CEO of SurMice, a startup focused on murdering less mice.
                   SurMice aims to facilitate closer collaboration between universities and zoos by using surplus lab mice as “feeder mice” for zoos in order to cut costs, resource waste, and energy usage for both parties.
                 </p>
               </div>
             </div>
             <div className="Project" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="-200" style={{marginBottom:"2%"}}>
-              <div className="ProjectLeft2">
-                <p style={{fontSize:"18px"}}>Current Crisis Counselor for the Trevor Project, supporting contacts around the US as they navigate through difficult situations.</p>
+              <div className="ProjectLeft2" style={{marginLeft:'6%', marginBottom:'3%'}}>
+                <p style={{fontSize:"16px"}}>Current Crisis Counselor for the Trevor Project, supporting contacts around the US as they navigate through difficult situations.</p>
               </div>
               <div className="ProjectRight2" style={{marginTop:"2%"}}>
                 <a href={"https://www.thetrevorproject.org"} target="_blank" rel="noopener noreferrer">
@@ -370,15 +370,16 @@ function App() {
           <img src={flowers555} alt="Cottagecore" className="Test-Overlay2"/>
         </div>
       </div>
-      <div className="Pictures" style={{marginLeft:"5%"}}>
+      <div className="Pictures" style={{marginLeft:"7.5%"}}>
         <br></br>
         <br></br>
-        <h3 data-aos="fade-in" data-aos-duration="1000" data-aos-offset="200">Pictures!</h3>
+        {/*<h3 data-aos="fade-in" data-aos-duration="1000" data-aos-offset="200">Pictures!</h3>*/}
+        <br></br>
         <br></br>
         <div>
           <SimpleImageSlider
-            width={'90%'}
-            height={'70%'}
+            width={'85%'}
+            height={'75%'}
             textAlign={'center'}
             images={images}
             showBullets={true}
@@ -438,12 +439,12 @@ function App() {
             <div className="Lab-Info" data-aos="fade-in" data-aos-duration="1000" data-aos-offset="200">
               <div className="Congirl" style={{marginTop:"3%", display:"flex", borderRadius:"50px", width:'70%'}}>
                 <div className="ProjectLeft1">
-                  <a href={"https://conboylab.berkeley.edu/"} target="_blank" rel="noopener noreferrer" style={{backgroundColor:'white'}}>
-                    <img className="Icon" src={conboy} alt="Conboy Lab" width="80%"/>
+                  <a href={"https://conboylab.berkeley.edu/"} target="_blank" rel="noopener noreferrer">
+                    <img className="Icon" src={conboy} alt="Conboy Lab" width="90%" style={{marginLeft:'10%', marginTop:'-2%'}}/>
                   </a>
                 </div>
                 <div className="ProjectRight1">
-                  <p style={{fontSize:'18px'}}>Currently, I'm at the Conboy Lab, which studies aging and heterochronic parabiosis. Heterochronic parabiosis is blood exchange from young to old animals,
+                  <p style={{fontSize:'22px', marginTop:'9%', marginRight:'5%', marginLeft:'5%'}}>Currently, I'm at the Conboy Lab, which studies aging and heterochronic parabiosis. Heterochronic parabiosis is blood exchange from young to old animals,
                     theoretically for the process of extending youth in aged bodies. The lab is studying what causes aging in the blood, and what could be taken out or added in to help extend life. Currently, 
                     I'm working on the blood brain barrier, what in old blood causes cells to senence, die, or age, and what in young blood helps rejuvenate brain cells?
                   </p>
@@ -452,7 +453,7 @@ function App() {
               <div className="Space"></div>
               <div className="Barton" style={{display:"flex", borderRadius:"50px", width:"70%", marginLeft:"28%"}}>
                 <div className="ProjectLeft2">
-                  <p style={{fontSize:'18px'}}>
+                  <p style={{fontSize:'22px', marginTop:'7%', marginRight:'5%', marginLeft:'5%'}}>
                     I was at the Barton Lab from F21-S22, where I worked on gut microbiota interactions. This involved working with germ free and high barrier mice, in order to minimize or completely eliminate 
                     outside microbiota influence from handlers or the environment around the mice. It also meant that I worked with the anaerobic chamber to culture bacteria, as well as doing mini/midipreps to add plasmids to these bacteria. 
                     I also had exposure to tumor injections, sapphic/cardiac bleeds, and mouse weaning/euthanasia work through this experience!
@@ -460,7 +461,7 @@ function App() {
                 </div>
                 <div className="ProjectRight2">
                   <a href={"https://bartonlab.berkeley.edu/"} target="_blank" rel="noopener noreferrer">
-                    <img className="Icon" src={tmsca} alt="Barton Lab" width="80%"/>
+                    <img className="Icon" src={tmsca} alt="Barton Lab" width="90%" style={{marginRight:'10%', marginTop:'-2%'}}/>
                   </a>
                 </div>
               </div>
