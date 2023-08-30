@@ -44,8 +44,7 @@ import qworld from './images/pastprojects/qworld.png'
 import ulab from './images/pastprojects/ulab.png'
 import bab from './images/pastprojects/bab.png'
 import csm from './images/pastprojects/csm.png'
-import pigeon from './videos/pigeon.mp4'
-import pigeongif from './videos/pigeon.gif'
+import Sofia from './videos/Sofia.gif'
 import Particles from "react-tsparticles";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
@@ -479,8 +478,8 @@ function App() {
         <h3>Animals/Volunteering, etc.</h3>
         <br></br>
         <br></br>
-        <div className="Pigeon" data-aos="fade-right" data-aos-duration="3000">
-          <img src={pigeongif} alt="Pigeon" width="50%"/>
+        <div className="Pigeon" data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-in-out" style={{marginLeft:'30%', marginBottom:'10%'}}>
+          <img src={Sofia} alt="Pigeon" width="30%"/>
         </div>
         {/*
         <div className="Pigeon" data-aos="fade-right" data-aos-duration="3000">
