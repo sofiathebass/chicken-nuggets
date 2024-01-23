@@ -2,8 +2,12 @@ import logo from './logo.svg';
 import { useState } from 'react';
 import cottagecore from './images/cottagecore-social.jpg';
 import upsidelogo from './images/upsidelogo.jpg';
-import cs_resume from './resumes/cs_resume.pdf';
+import cs_resume from './resumes/CS Resume Sofia S24.pdf';
 import cs_resume_img from './images/cs-resume.jpg';
+import bio_resume from './resumes/Bio Resume Sofia F23.pdf';
+import bio_resume_img from './images/bio-resume.jpg';
+import vc_resume from './resumes/VC Resume Sofia F23.pdf';
+import vc_resume_img from './images/cs-resume.jpg';
 import flowers1 from './images/flowers1.png';
 import flowers3 from './images/flowers3.png';
 import flowers5 from './images/Flower.png';
@@ -123,15 +127,11 @@ function App() {
             <img className="Header-Pic" src={cottagecore} alt="Cottagecore" width="100%" height="100%"/> 
             <div className="Resumes">
               <a href={cs_resume} target="_blank" rel="noopener noreferrer">
-                <img className="Res" src={cs_resume_img} alt="Bio Resume" width="10%"/>
+                <img className="Res" src={cs_resume_img} alt="CS Resume" width="10%"/>
               </a>
               <br></br>
-              <a href={cs_resume} target="_blank" rel="noopener noreferrer">
-                <img className="Res" src={cs_resume_img} alt="Bio Resume" width="10%"/>
-              </a>
-              <br></br>
-              <a href={cs_resume} target="_blank" rel="noopener noreferrer">
-                <img className="Res" src={cs_resume_img} alt="Bio Resume" width="10%"/>
+              <a href={bio_resume} target="_blank" rel="noopener noreferrer">
+                <img className="Res" src={bio_resume_img} alt="Bio Resume" width="10%"/>
               </a>
             </div>
           </div>
