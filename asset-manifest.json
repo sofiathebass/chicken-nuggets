@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/chicken-nuggets/static/css/main.3d3b2b95.css",
-    "main.js": "/chicken-nuggets/static/js/main.3db62393.js",
+    "main.js": "/chicken-nuggets/static/js/main.f735ee1e.js",
     "static/js/787.8240d571.chunk.js": "/chicken-nuggets/static/js/787.8240d571.chunk.js",
     "static/media/berkscc.png": "/chicken-nuggets/static/media/berkscc.d412ca605f8b239a6acf.png",
     "static/media/three.png": "/chicken-nuggets/static/media/three.3677006ae753d080efeb.png",
@@ -16,7 +16,8 @@
     "static/media/nutri.png": "/chicken-nuggets/static/media/nutri.e2516c1ae825c925253c.png",
     "static/media/dss.png": "/chicken-nuggets/static/media/dss.06bcda588ceddf6e25b0.png",
     "static/media/trevor1.png": "/chicken-nuggets/static/media/trevor1.664fa1b79761bb83f383.png",
-    "static/media/cs-resume.jpg": "/chicken-nuggets/static/media/cs-resume.19b2592c50d9898d1d90.jpg",
+    "static/media/cs-resume.jpg": "/chicken-nuggets/static/media/cs-resume.42fa51b2be7d85edbbd9.jpg",
+    "static/media/bio-resume.jpg": "/chicken-nuggets/static/media/bio-resume.16ba9b8b33d53038f8a2.jpg",
     "static/media/surmice.png": "/chicken-nuggets/static/media/surmice.4e83afe4f2a27eaf4c00.png",
     "static/media/Flower55.png": "/chicken-nuggets/static/media/Flower55.d8d311239a10ab14c70f.png",
     "static/media/61a.png": "/chicken-nuggets/static/media/61a.1b46685f93af2574f5d4.png",
@@ -29,8 +30,10 @@
     "static/media/flowers3.png": "/chicken-nuggets/static/media/flowers3.d318ac91ff8fe728d6d6.png",
     "static/media/flowers1.png": "/chicken-nuggets/static/media/flowers1.5fb36c868bb469a29c0b.png",
     "static/media/Flower555.png": "/chicken-nuggets/static/media/Flower555.d02b8e380caa85b65d6e.png",
+    "static/media/Bio Resume Sofia F23.pdf": "/chicken-nuggets/static/media/Bio Resume Sofia F23.6bef925a9c753af0d211.pdf",
+    "static/media/VC Resume Sofia F23.pdf": "/chicken-nuggets/static/media/VC Resume Sofia F23.4f82b8f0323f769bb23a.pdf",
+    "static/media/CS Resume Sofia S24.pdf": "/chicken-nuggets/static/media/CS Resume Sofia S24.6f0bbf139946797525d4.pdf",
     "static/media/LabScripts.png": "/chicken-nuggets/static/media/LabScripts.68aabf93727ca6381062.png",
-    "static/media/cs_resume.pdf": "/chicken-nuggets/static/media/cs_resume.2bce75de814cecba02ef.pdf",
     "static/media/b1337.png": "/chicken-nuggets/static/media/b1337.8e70b19774c0b60c2f6d.png",
     "static/media/cloudatcal.png": "/chicken-nuggets/static/media/cloudatcal.e36d79f8062e9fb369a6.png",
     "static/media/woof.png": "/chicken-nuggets/static/media/woof.44c9f89b2f24290116d9.png",
@@ -46,11 +49,11 @@
     "static/media/logo.svg": "/chicken-nuggets/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/chicken-nuggets/index.html",
     "main.3d3b2b95.css.map": "/chicken-nuggets/static/css/main.3d3b2b95.css.map",
-    "main.3db62393.js.map": "/chicken-nuggets/static/js/main.3db62393.js.map",
+    "main.f735ee1e.js.map": "/chicken-nuggets/static/js/main.f735ee1e.js.map",
     "787.8240d571.chunk.js.map": "/chicken-nuggets/static/js/787.8240d571.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3d3b2b95.css",
-    "static/js/main.3db62393.js"
+    "static/js/main.f735ee1e.js"
   ]
 }
